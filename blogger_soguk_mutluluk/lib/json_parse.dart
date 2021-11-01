@@ -26,7 +26,7 @@ class JsonParser extends ChangeNotifier{
   }
 
   Future<PostList> fetchPostList() async{
-    var url = Uri.parse('https://www.googleapis.com/blogger/v3/blogs/5175624030382615009/posts?key=AIzaSyDrW9LUpN1S6XfK7uE36_ujUaEP6hQHA-8');
+    var url = Uri.parse('https://www.googleapis.com/blogger/v3/blogs/5175624030382615009/posts?key=$key');
 
     List<Content> _contents = [];
     try{
